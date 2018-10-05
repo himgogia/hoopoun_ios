@@ -1,0 +1,6 @@
+framework module Pods_Hoopoun {
+  umbrella header "Pods-Hoopoun-umbrella.h"
+
+  export *
+  module * { export * }
+}

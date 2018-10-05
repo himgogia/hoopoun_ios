@@ -1,0 +1,10 @@
+framework module SJSegmentedScrollView {
+  umbrella header "SJSegmentedScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SJSegmentedScrollView.Swift {
+    header "SJSegmentedScrollView-Swift.h"
+}

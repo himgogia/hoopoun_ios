@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KGk-i7-Jjw" customClass="SignupCell" customModule="Hoopoun" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2T9-x1-fGQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="82B-Sq-605">
+                        <rect key="frame" x="18.5" y="14" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="23v-7I-C28"/>
+                            <constraint firstAttribute="width" constant="20" id="kAj-oK-Vi2"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m0y-o0-m8A">
+                        <rect key="frame" x="55" y="10" width="245" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="MyE-ar-K6p"/>
+                        </constraints>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="twZ-lo-S6A"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="m0y-o0-m8A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0Bv-YX-OfT"/>
+                    <constraint firstAttribute="trailing" secondItem="m0y-o0-m8A" secondAttribute="trailing" constant="20" id="B2x-6G-G13"/>
+                    <constraint firstItem="2T9-x1-fGQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Qj3-l9-JhQ"/>
+                    <constraint firstItem="2T9-x1-fGQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UK2-z5-1Qm"/>
+                    <constraint firstAttribute="trailing" secondItem="2T9-x1-fGQ" secondAttribute="trailing" id="ajg-Oe-8tf"/>
+                    <constraint firstItem="82B-Sq-605" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="gDO-2f-F1w"/>
+                    <constraint firstAttribute="bottom" secondItem="2T9-x1-fGQ" secondAttribute="bottom" constant="-0.5" id="gXV-fr-V6w"/>
+                    <constraint firstItem="m0y-o0-m8A" firstAttribute="leading" secondItem="82B-Sq-605" secondAttribute="trailing" constant="16.5" id="wcR-e7-Gab"/>
+                    <constraint firstItem="82B-Sq-605" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18.5" id="y09-2v-sSW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="logoImageView" destination="82B-Sq-605" id="QSF-Ed-dHg"/>
+                <outlet property="textField" destination="m0y-o0-m8A" id="xrn-kF-KcM"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KGk-i7-Jjw" customClass="BusinessListCell" customModule="Hoopoun" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fBh-cm-kWj">
+                        <rect key="frame" x="10" y="10" width="270" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="NYJ-jy-s0t"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="54l-5t-qtc"/>
+                        </connections>
+                    </textField>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropDownGray" translatesAutoresizingMaskIntoConstraints="NO" id="YyK-E3-Cvo">
+                        <rect key="frame" x="290" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="G4R-IK-zzY"/>
+                            <constraint firstAttribute="height" constant="20" id="hRh-8l-nAA"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4l-ko-xpa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z1s-mQ-exB">
+                        <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0yA-hG-m1T"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fBh-cm-kWj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3Qp-7Y-ygY"/>
+                    <constraint firstItem="YyK-E3-Cvo" firstAttribute="leading" secondItem="fBh-cm-kWj" secondAttribute="trailing" constant="10" id="5ge-jZ-qa2"/>
+                    <constraint firstItem="z4l-ko-xpa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GH0-ZU-tOU"/>
+                    <constraint firstAttribute="bottom" secondItem="z4l-ko-xpa" secondAttribute="bottom" constant="-0.5" id="MzM-6q-KGZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Z1s-mQ-exB" secondAttribute="trailing" id="PS1-sh-C8D"/>
+                    <constraint firstItem="Z1s-mQ-exB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="U5v-80-Rn5"/>
+                    <constraint firstItem="z4l-ko-xpa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="czZ-xt-LaV"/>
+                    <constraint firstItem="fBh-cm-kWj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ehz-2A-Wp9"/>
+                    <constraint firstItem="YyK-E3-Cvo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ikC-lM-YAQ"/>
+                    <constraint firstAttribute="trailing" secondItem="YyK-E3-Cvo" secondAttribute="trailing" constant="10" id="tRh-YJ-gog"/>
+                    <constraint firstAttribute="trailing" secondItem="z4l-ko-xpa" secondAttribute="trailing" id="wcV-eC-FBc"/>
+                    <constraint firstAttribute="bottom" secondItem="fBh-cm-kWj" secondAttribute="bottom" constant="10" id="zd7-oh-hoP"/>
+                    <constraint firstAttribute="bottom" secondItem="Z1s-mQ-exB" secondAttribute="bottom" constant="-0.5" id="zlz-yP-uAB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImages" destination="YyK-E3-Cvo" id="w6k-YX-r94"/>
+                <outlet property="buttonTop" destination="z4l-ko-xpa" id="Xdu-bk-E2Q"/>
+                <outlet property="imageWidth" destination="G4R-IK-zzY" id="uUC-lf-ceU"/>
+                <outlet property="textField" destination="fBh-cm-kWj" id="jBA-Sb-2Vb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dropDownGray" width="22" height="22"/>
+    </resources>
+</document>
